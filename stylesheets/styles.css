@@ -8789,6 +8789,20 @@ button.close {
   }
 }
 /* line 1, ../sass/_base.scss */
+html {
+  color: #343534;
+}
+
+/* line 5, ../sass/_base.scss */
+.nav {
+  background-color: #CF4B00;
+}
+/* line 7, ../sass/_base.scss */
+.nav .logo-img {
+  padding: 15px 20px;
+}
+
+/* line 12, ../sass/_base.scss */
 .profile-section {
   display: -webkit-flex;
   display: flex;
@@ -8799,21 +8813,44 @@ button.close {
   -webkit-align-items: center;
   align-items: center;
 }
-/* line 7, ../sass/_base.scss */
+/* line 18, ../sass/_base.scss */
 .profile-section > * {
   -webkit-flex: 1;
   flex: 1;
 }
 
-/* line 12, ../sass/_base.scss */
+/* line 22, ../sass/_base.scss */
+.section-title {
+  padding: 15px;
+}
+/* line 24, ../sass/_base.scss */
 .section-title h2, .section-title h4 {
   text-align: center;
 }
 
-/* line 18, ../sass/_base.scss */
+/* line 29, ../sass/_base.scss */
+.profile-image {
+  padding: 20px 0;
+}
+/* line 31, ../sass/_base.scss */
 .profile-image img {
-  border: 1px solid black;
+  border: 1px solid #343534;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
+}
+
+/* line 37, ../sass/_base.scss */
+.panel-heading {
+  background-color: #568EA3 !important;
+}
+/* line 39, ../sass/_base.scss */
+.panel-heading h2 {
+  font-size: 20px;
+  color: #FFF;
+}
+
+/* line 44, ../sass/_base.scss */
+.panel {
+  border: 1px solid #B4B8AB;
 }

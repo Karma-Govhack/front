@@ -1,3 +1,14 @@
+html {
+  color: $almostBlack;
+}
+
+.nav {
+  background-color: $veryOrange;
+  .logo-img {
+    padding: 15px 20px;
+  }
+}
+
 .profile-section {
   @include display-flex;
   @include flex-direction(column);
@@ -9,14 +20,27 @@
   }
 }
 .section-title {
+  padding: 15px;
   h2, h4 {
     text-align: center;
   }
 }
 
 .profile-image {
+  padding: 20px 0;
   img {
-    border: 1px solid black;
+    border: 1px solid $almostBlack;
     @include border-radius(50%);
   }
+}
+
+.panel-heading {
+  background-color: $seaBlue!important;
+  h2 {
+    font-size: 20px;
+    color: $white;
+  }
+}
+.panel {
+  border: 1px solid #B4B8AB;
 }
