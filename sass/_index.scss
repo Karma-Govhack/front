@@ -1,7 +1,7 @@
 #mainDiv {
 
-  background: url('../assets/img/bg-img-overlay.png') no-repeat center center;
-  @include background-size(cover);
+  // background: url('../assets/img/bg-img-overlay.png') no-repeat center center;
+  // @include background-size(cover);
   height: 100vh;
 }
 #formPanel {
@@ -9,7 +9,7 @@
   width: 60%;
   position: absolute;
   top: 18%;
-  left: calc(20% + 7.5px);
+  left: 20%;
   border: 0;
   > .panel-heading {
 
@@ -24,13 +24,54 @@
     }
   }
 }
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+    overflow-y: hidden!important;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background: $white;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
 .flex-container {
 
   @include display-flex;
   @include justify-content(center);
   @include align-items(center);
   .flex-item {
-
+    // add media query here
     @include flex-basis(50%);
     &:first-of-type {
 
