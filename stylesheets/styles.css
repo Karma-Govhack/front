@@ -8806,42 +8806,42 @@ html {
   box-sizing: inherit;
 }
 
-/* line 14, ../sass/_base.scss */
+/* line 13, ../sass/_base.scss */
+h1, h2, h3, h4, p {
+  color: #343534;
+}
+
+/* line 16, ../sass/_base.scss */
 h1 {
   font: normal normal 800 2rem/1.4em "Open Sans", sans-serif;
 }
 
-/* line 17, ../sass/_base.scss */
+/* line 19, ../sass/_base.scss */
 h2 {
   font: normal normal 600 1.8rem/1.4em "Open Sans", sans-serif;
 }
 
-/* line 20, ../sass/_base.scss */
+/* line 22, ../sass/_base.scss */
 h3 {
   font: normal normal 600 1.6rem/1.4em "Open Sans", sans-serif;
 }
 
-/* line 23, ../sass/_base.scss */
+/* line 25, ../sass/_base.scss */
 h4 {
   font: normal normal 600 1.4rem/1.4em "Open Sans", sans-serif;
 }
 
-/* line 26, ../sass/_base.scss */
+/* line 28, ../sass/_base.scss */
 p {
   font: inherit;
 }
 
-/* line 29, ../sass/_base.scss */
+/* line 31, ../sass/_base.scss */
 .nav {
   background-color: #CF4B00;
 }
 
-/* line 32, ../sass/_base.scss */
-.logo-img {
-  padding: 15px 20px;
-}
-
-/* line 36, ../sass/_base.scss */
+/* line 35, ../sass/_base.scss */
 .profile-section {
   display: -webkit-flex;
   display: flex;
@@ -8852,30 +8852,34 @@ p {
   -webkit-align-items: center;
   align-items: center;
 }
-/* line 42, ../sass/_base.scss */
+/* line 41, ../sass/_base.scss */
 .profile-section > * {
   -webkit-flex: 1;
   flex: 1;
 }
 
-/* line 46, ../sass/_base.scss */
+/* line 45, ../sass/_base.scss */
 .section-title {
   padding: 15px;
 }
-/* line 48, ../sass/_base.scss */
+/* line 47, ../sass/_base.scss */
 .section-title h2 {
   font-weight: 800;
 }
-/* line 51, ../sass/_base.scss */
+/* line 50, ../sass/_base.scss */
 .section-title h2, .section-title h4 {
   text-align: center;
 }
+/* line 53, ../sass/_base.scss */
+.section-title h4 {
+  color: #CF4B00;
+}
 
-/* line 55, ../sass/_base.scss */
+/* line 57, ../sass/_base.scss */
 .profile-image {
   padding: 20px 0;
 }
-/* line 57, ../sass/_base.scss */
+/* line 59, ../sass/_base.scss */
 .profile-image img {
   border: 1px solid #343534;
   -moz-border-radius: 50%;
@@ -8883,33 +8887,43 @@ p {
   border-radius: 50%;
 }
 
-/* line 63, ../sass/_base.scss */
+/* line 65, ../sass/_base.scss */
 .panel > .panel-body {
   font: normal normal 300 15px/1.4em "Open Sans", sans-serif;
 }
-/* line 66, ../sass/_base.scss */
+/* line 68, ../sass/_base.scss */
+.panel > .panel-heading {
+  border-color: transparent;
+}
+/* line 70, ../sass/_base.scss */
 .panel > .panel-heading h2 {
   font: normal normal 300 1.3rem/1.4em "Open Sans", sans-serif;
 }
 
-/* line 70, ../sass/_base.scss */
-.card-list > .panel {
-  border: 1px solid #B4B8AB;
+/* line 77, ../sass/_base.scss */
+.card-list > .panel > div {
+  padding: 12px 18px;
 }
-/* line 71, ../sass/_base.scss */
+/* line 80, ../sass/_base.scss */
 .card-list > .panel .panel-heading {
   background-color: #568EA3;
 }
-/* line 73, ../sass/_base.scss */
+/* line 82, ../sass/_base.scss */
 .card-list > .panel .panel-heading h2 {
   color: #FFF;
 }
+/* line 87, ../sass/_base.scss */
+.card-list > .panel .panel-body {
+  border: 1px solid #B4B8AB;
+  border-top-color: transparent;
+  margin-top: -1px;
+}
 
-/* line 82, ../sass/_base.scss */
+/* line 96, ../sass/_base.scss */
 .bio > .panel {
   max-width: 90%;
 }
-/* line 84, ../sass/_base.scss */
+/* line 98, ../sass/_base.scss */
 .bio > .panel .panel-heading h2 {
   font-weight: 600;
 }
@@ -8939,12 +8953,12 @@ p {
   padding: 25px 10px;
   border-color: transparent;
 }
-/* line 22, ../sass/_index.scss */
+/* line 20, ../sass/_index.scss */
 #formPanel > .panel-heading h1 {
   color: #FFF;
 }
 
-/* line 30, ../sass/_index.scss */
+/* line 26, ../sass/_index.scss */
 .flex-container {
   display: -webkit-flex;
   display: flex;
@@ -8953,22 +8967,22 @@ p {
   -webkit-align-items: center;
   align-items: center;
 }
-/* line 35, ../sass/_index.scss */
+/* line 31, ../sass/_index.scss */
 .flex-container .flex-item {
   -webkit-flex-basis: 50%;
   flex-basis: 50%;
 }
-/* line 38, ../sass/_index.scss */
+/* line 34, ../sass/_index.scss */
 .flex-container .flex-item:first-of-type {
   border-right: 1px solid #B4B8AB;
 }
 
-/* line 43, ../sass/_index.scss */
+/* line 39, ../sass/_index.scss */
 .btns {
   padding: 5px 5px 15px;
 }
 
-/* line 46, ../sass/_index.scss */
+/* line 42, ../sass/_index.scss */
 .btn-login, .btn-register {
   width: 75%;
   -moz-border-radius: 0;
@@ -8978,38 +8992,48 @@ p {
   margin-bottom: 15px;
   font-size: 1rem;
 }
-/* line 52, ../sass/_index.scss */
+/* line 48, ../sass/_index.scss */
 .btn-login:focus, .btn-register:focus {
   outline: none;
 }
 
-/* line 56, ../sass/_index.scss */
+/* line 52, ../sass/_index.scss */
 .btn-login {
   background-color: #568EA3;
   color: #FFF;
   margin-top: 15px;
 }
 
-/* line 61, ../sass/_index.scss */
+/* line 57, ../sass/_index.scss */
 .btn-register {
   background-color: #FFF;
   border: 1px solid #568EA3;
   color: #568EA3;
 }
 
-/* line 68, ../sass/_index.scss */
+/* line 64, ../sass/_index.scss */
 .email {
   border-radius: 0px;
   padding: 8px 16px;
 }
 
-/* line 73, ../sass/_index.scss */
+/* line 69, ../sass/_index.scss */
 .pwd {
   border-radius: 0px;
   padding: 8px 16px;
 }
 
-/* line 78, ../sass/_index.scss */
+/* line 74, ../sass/_index.scss */
 .hideForm {
   display: none;
+}
+
+/* line 1, ../sass/_volunteer.scss */
+#logo-img {
+  padding: 20px 40px;
+}
+/* line 3, ../sass/_volunteer.scss */
+#logo-img:hover {
+  background-color: transparent;
+  border-color: transparent;
 }

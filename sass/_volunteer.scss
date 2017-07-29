@@ -1,1 +1,7 @@
-
+#logo-img {
+  padding: 20px 40px;
+  &:hover {
+    background-color: transparent;
+    border-color: transparent;
+  }
+}

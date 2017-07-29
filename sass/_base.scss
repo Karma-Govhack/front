@@ -10,7 +10,9 @@ html {
 
   @include box-sizing(inherit);
 }
-
+h1, h2, h3, h4, p {
+  color: $almostBlack;
+}
 h1 {
   font: normal normal 800 2rem/1.4em $mainFont;
 }
@@ -28,9 +30,6 @@ p {
 }
 .nav {
   background-color: $veryOrange;
-}
-.logo-img {
-  padding: 15px 20px;
 }
 
 .profile-section {
@@ -51,6 +50,9 @@ p {
   h2, h4 {
     text-align: center;
   }
+  h4 {
+    color: $veryOrange;
+  }
 }
 .profile-image {
   padding: 20px 0;
@@ -63,19 +65,31 @@ p {
   > .panel-body {
     font: normal normal 300 15px/1.4em $mainFont;
   }
-  > .panel-heading h2 {
-    font: normal normal 300 1.3rem/1.4em $mainFont;
-  }
-}
-.card-list > .panel {
-  .panel-heading {
-    background-color: $seaBlue;
+  > .panel-heading  {
+    border-color: transparent;
     h2 {
-
-      color: $white;
+      font: normal normal 300 1.3rem/1.4em $mainFont;
     }
   }
-  border: 1px solid #B4B8AB;
+}
+.card-list {
+  > .panel {
+    > div {
+      padding: 12px 18px;
+    }
+    .panel-heading {
+      background-color: $seaBlue;
+      h2 {
+
+        color: $white;
+      }
+    }
+    .panel-body {
+      border: 1px solid #B4B8AB;
+      border-top-color: transparent;
+      margin-top: -1px;
+    }
+  }
 }
 
 .bio {
