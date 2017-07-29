@@ -8798,7 +8798,6 @@ button.close {
   justify-content: space-around;
   -webkit-align-items: center;
   align-items: center;
-  max-width: 90%;
 }
 /* line 9, ../sass/_volunteer.scss */
 .profile-volunteer .volunteer-name h2, .jobs-volunteer .volunteer-name h2, .charity-volunteer .volunteer-name h2, .profile-volunteer .volunteer-name h4, .jobs-volunteer .volunteer-name h4, .charity-volunteer .volunteer-name h4 {
