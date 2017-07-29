@@ -14,53 +14,81 @@
         <link rel="stylesheet" href="stylesheets/normalize.min.css">
         <link rel="stylesheet" href="stylesheets/styles.css">
 
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="javascripts/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
-    <body class="container-fluid">
+    <body>
 
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-<script src="https://code.jquery.com/jquery.min.js"></script>
-
-      <div style="text-align:center">
-        <h2><b>Karma <b></h2>
-      </div>
-      <div calss="row">
-      <div class="col-sm-3 jumbotron text-center">
-      <img src="https://www.123freevectors.com/wp-content/uploads/new/icon/075-smiley-face-vector-art-free-download-l.png" height="80" width="80" class="img-circle">
-      <br>
-      <b>
-        <div class= well well-sm> Name <br> </div>
-        <div class= well well-sm>Location <br></div>
-      <div class= well well-sm>Skills <br></div>
-      <div class= well well-sm>Interset <br></div>
-
-     </div>
-      <div class="col-sm-4 jumbotron"> <b>Jobs</b>
-      <br>
-      <div class= well well-sm>
-    Job.1 <br>
+<!-- <script src="https://code.jquery.com/jquery.min.js"></script> -->
+<div class="container-fluid">
+  <div style="text-align:center">
+    <h1>Karma</h1>
   </div>
-  <div class= well well-sm>
-  Job.2 <br> </div>
-  <div class= well well-sm>
-Job.3 <br> </div>
-<div class= well well-sm>
-Job.4 <br>
-</div> </div>
-      <div class="col-sm-4 jumbotron"> Charity Sectors
-        <br>
-        Reccomended Charities <br>
+  <div class="row">
 
+    <div class="col-sm-4">
+      <div class="profile-volunteer">
+        <div class="volunteer-name">
+          <h2>Lucas</h2>
+          <h4>50 Karma</h4>
+        </div>
+        <div class="volunteer-image">
+          <img class="circle" src="assets/img/user-placeholder.png" height="120px" />
+        </div>
+        <ul class="list-group volunteer-info">
+          <li class="list-group-item info-title">
+            About me
+          </li>
+          <li class="list-group-item info-content">
+            I am a volunteer and I am awesome. I love to volunteer and help everyone.
+          </li>
+          <li class="list-group-item info-title">
+            Location
+          </li>
+          <li class="list-group-item info-content">
+            Ponsonby, Auckland
+          </li>
+          <li class="list-group-item info-title">
+            Skills
+          </li>
+          <li class="list-group-item info-content">
+            Gardening, Making coffee, Painting houses
+          </li>
+          <li class="list-group-item info-title">
+            Interests
+          </li>
+          <li class="list-group-item info-content">
+            Community service, Health, Coffee
+          </li>
+        </ul>
       </div>
+    </div>
+
+    <div class="col-sm-4 jobs-volunteer"> <b>Jobs</b>
+      <div class= "well well-sm">
+        Job.1
       </div>
+      <div class= "well well-sm">
+        Job.2
+      </div>
+      <div class= "well well-sm">
+        Job.3
+      </div>
+      <div class= "well well-sm">
+        Job.4
+      </div>
+    </div>
+    <div class="col-sm-4 charity-volunteer"> Charity Sectors
+      <br>
+      Reccomended Charities <br>
+    </div>
+  </div>
+</div>
 
-
-
-                <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
-        <script src="js/main.js"></script>
+  <script>window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="javascripts/main.js"></script>
     </body>
 </html>
