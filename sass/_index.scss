@@ -1,76 +1,83 @@
 #mainDiv {
+
   background: url('../assets/img/bg-img-overlay.png') no-repeat center center;
   @include background-size(cover);
   height: 100vh;
 }
-
 #formPanel {
+
   width: 60%;
   position: absolute;
   top: 18%;
   left: calc(20% + 7.5px);
   border: 0;
-
   > .panel-heading {
+
     background-color: $veryOrange;
     // background-color: rgba(207, 75, 0, .8);
     border-radius: 0px;
     padding: 25px 10px;
     border-color: transparent;
     h1 {
+
       color: $white;
     }
   }
-
 }
 .flex-container {
+
   @include display-flex;
   @include justify-content(center);
   @include align-items(center);
-
   .flex-item {
-    @include flex-basis(50%);
 
+    @include flex-basis(50%);
     &:first-of-type {
+
       border-right: 1px solid $oliveGray;
     }
   }
 }
 .btns {
+
   padding: 5px 5px 15px;
 }
 .btn-login, .btn-register {
+
   width: 75%;
   @include border-radius(0);
   padding: 15px;
   margin-bottom: 15px;
   font-size: 1rem;
   &:focus {
+
     outline: none;
   }
 }
 .btn-login {
+
   background-color: $seaBlue;
   color: $white;
   margin-top: 15px;
 }
 .btn-register {
+
   background-color: $white;
   border: 1px solid $seaBlue;
   color: $seaBlue;
 }
 
 
-.email {
-  border-radius: 0px;
-  padding: 8px 16px;
-}
-
-.pwd {
-  border-radius: 0px;
-  padding: 8px 16px;
-}
-
-.hideForm {
-  display: none;
-}
+// .email {
+//   border-radius: 0px;
+//   padding: 8px 16px;
+// }
+//
+// .pwd {
+//   border-radius: 0px;
+//   padding: 8px 16px;
+// }
+//
+// .hideForm {
+//   display: none;
+// }
