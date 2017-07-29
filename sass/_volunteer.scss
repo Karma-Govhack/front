@@ -1,33 +1,3 @@
 .profile-volunteer {
-  @include display-flex;
-  @include flex-direction(column);
-  @include justify-content(space-around);
-  @include align-items(center);
 
-
-  .volunteer-name {
-    h2, h4 {
-      text-align: center;
-    }
-  }
-  .volunteer-image {
-    img {
-      border: 1px solid black;
-      @include border-radius(50%);
-    }
-  }
-
-  .volunteer-info {
-    width: 80%;
-  }
-
-
-}
-
-.jobs-volunteer {
-  @extend .profile-volunteer;
-}
-
-.charity-volunteer {
-  @extend .profile-volunteer;
 }

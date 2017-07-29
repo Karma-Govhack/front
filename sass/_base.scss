@@ -1,0 +1,22 @@
+.profile-section {
+  @include display-flex;
+  @include flex-direction(column);
+  @include justify-content(space-between);
+  @include align-items(center);
+
+  > * {
+    @include flex(1);
+  }
+}
+.section-title {
+  h2, h4 {
+    text-align: center;
+  }
+}
+
+.profile-image {
+  img {
+    border: 1px solid black;
+    @include border-radius(50%);
+  }
+}

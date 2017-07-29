@@ -8788,29 +8788,32 @@ button.close {
     display: none !important;
   }
 }
-/* line 1, ../sass/_volunteer.scss */
-.profile-volunteer, .jobs-volunteer, .charity-volunteer {
+/* line 1, ../sass/_base.scss */
+.profile-section {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: column;
   flex-direction: column;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
   -webkit-align-items: center;
   align-items: center;
 }
-/* line 9, ../sass/_volunteer.scss */
-.profile-volunteer .volunteer-name h2, .jobs-volunteer .volunteer-name h2, .charity-volunteer .volunteer-name h2, .profile-volunteer .volunteer-name h4, .jobs-volunteer .volunteer-name h4, .charity-volunteer .volunteer-name h4 {
+/* line 7, ../sass/_base.scss */
+.profile-section > * {
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+/* line 12, ../sass/_base.scss */
+.section-title h2, .section-title h4 {
   text-align: center;
 }
-/* line 14, ../sass/_volunteer.scss */
-.profile-volunteer .volunteer-image img, .jobs-volunteer .volunteer-image img, .charity-volunteer .volunteer-image img {
+
+/* line 18, ../sass/_base.scss */
+.profile-image img {
   border: 1px solid black;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-}
-/* line 20, ../sass/_volunteer.scss */
-.profile-volunteer .volunteer-info, .jobs-volunteer .volunteer-info, .charity-volunteer .volunteer-info {
-  width: 80%;
 }
