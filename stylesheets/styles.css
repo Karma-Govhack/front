@@ -8794,9 +8794,10 @@ html {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  font: normal normal 300 15px/1.4em "Open Sans", sans-serif;
 }
 
-/* line 6, ../sass/_base.scss */
+/* line 7, ../sass/_base.scss */
 *,
 *:before,
 *:after {
@@ -8806,15 +8807,41 @@ html {
 }
 
 /* line 13, ../sass/_base.scss */
+h1, h2, h3, h4, p {
+  color: #343534;
+}
+
+/* line 16, ../sass/_base.scss */
+h1 {
+  font: normal normal 800 2rem/1.4em "Open Sans", sans-serif;
+}
+
+/* line 19, ../sass/_base.scss */
+h2 {
+  font: normal normal 600 1.8rem/1.4em "Open Sans", sans-serif;
+}
+
+/* line 22, ../sass/_base.scss */
+h3 {
+  font: normal normal 600 1.6rem/1.4em "Open Sans", sans-serif;
+}
+
+/* line 25, ../sass/_base.scss */
+h4 {
+  font: normal normal 600 1.4rem/1.4em "Open Sans", sans-serif;
+}
+
+/* line 28, ../sass/_base.scss */
+p {
+  font: inherit;
+}
+
+/* line 31, ../sass/_base.scss */
 .nav {
   background-color: #CF4B00;
 }
-/* line 15, ../sass/_base.scss */
-.nav .logo-img {
-  padding: 15px 20px;
-}
 
-/* line 20, ../sass/_base.scss */
+/* line 35, ../sass/_base.scss */
 .profile-section {
   display: -webkit-flex;
   display: flex;
@@ -8825,26 +8852,34 @@ html {
   -webkit-align-items: center;
   align-items: center;
 }
-/* line 26, ../sass/_base.scss */
+/* line 41, ../sass/_base.scss */
 .profile-section > * {
   -webkit-flex: 1;
   flex: 1;
 }
 
-/* line 30, ../sass/_base.scss */
+/* line 45, ../sass/_base.scss */
 .section-title {
   padding: 15px;
 }
-/* line 32, ../sass/_base.scss */
+/* line 47, ../sass/_base.scss */
+.section-title h2 {
+  font-weight: 800;
+}
+/* line 50, ../sass/_base.scss */
 .section-title h2, .section-title h4 {
   text-align: center;
 }
+/* line 53, ../sass/_base.scss */
+.section-title h4 {
+  color: #CF4B00;
+}
 
-/* line 37, ../sass/_base.scss */
+/* line 57, ../sass/_base.scss */
 .profile-image {
   padding: 20px 0;
 }
-/* line 39, ../sass/_base.scss */
+/* line 59, ../sass/_base.scss */
 .profile-image img {
   border: 1px solid #343534;
   -moz-border-radius: 50%;
@@ -8852,19 +8887,45 @@ html {
   border-radius: 50%;
 }
 
-/* line 45, ../sass/_base.scss */
-.profile-section > .panel-heading {
-  background-color: #568EA3 !important;
+/* line 65, ../sass/_base.scss */
+.panel > .panel-body {
+  font: normal normal 300 15px/1.4em "Open Sans", sans-serif;
 }
-/* line 47, ../sass/_base.scss */
-.profile-section > .panel-heading h2 {
-  font-size: 20px;
-  color: #FFF;
+/* line 68, ../sass/_base.scss */
+.panel > .panel-heading {
+  border-color: transparent;
+}
+/* line 70, ../sass/_base.scss */
+.panel > .panel-heading h2 {
+  font: normal normal 300 1.3rem/1.4em "Open Sans", sans-serif;
 }
 
-/* line 52, ../sass/_base.scss */
-.panel {
+/* line 77, ../sass/_base.scss */
+.card-list > .panel > div {
+  padding: 12px 18px;
+}
+/* line 80, ../sass/_base.scss */
+.card-list > .panel .panel-heading {
+  background-color: #568EA3;
+}
+/* line 82, ../sass/_base.scss */
+.card-list > .panel .panel-heading h2 {
+  color: #FFF;
+}
+/* line 87, ../sass/_base.scss */
+.card-list > .panel .panel-body {
   border: 1px solid #B4B8AB;
+  border-top-color: transparent;
+  margin-top: -1px;
+}
+
+/* line 96, ../sass/_base.scss */
+.bio > .panel {
+  max-width: 90%;
+}
+/* line 98, ../sass/_base.scss */
+.bio > .panel .panel-heading h2 {
+  font-weight: 600;
 }
 
 /* line 1, ../sass/_index.scss */
@@ -8879,34 +8940,100 @@ html {
 
 /* line 7, ../sass/_index.scss */
 #formPanel {
-  border-radius: 0px;
   width: 60%;
   position: absolute;
-  top: 25%;
-  left: 25%;
+  top: 18%;
+  left: calc(20% + 7.5px);
   border: 0;
 }
-
-/* line 16, ../sass/_index.scss */
+/* line 14, ../sass/_index.scss */
 #formPanel > .panel-heading {
   background-color: #CF4B00;
   border-radius: 0px;
   padding: 25px 10px;
+  border-color: transparent;
+}
+/* line 20, ../sass/_index.scss */
+#formPanel > .panel-heading h1 {
+  color: #FFF;
 }
 
-/* line 23, ../sass/_index.scss */
+/* line 26, ../sass/_index.scss */
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/* line 31, ../sass/_index.scss */
+.flex-container .flex-item {
+  -webkit-flex-basis: 50%;
+  flex-basis: 50%;
+}
+/* line 34, ../sass/_index.scss */
+.flex-container .flex-item:first-of-type {
+  border-right: 1px solid #B4B8AB;
+}
+
+/* line 39, ../sass/_index.scss */
+.btns {
+  padding: 5px 5px 15px;
+}
+
+/* line 42, ../sass/_index.scss */
+.btn-login, .btn-register {
+  width: 75%;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  padding: 15px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+/* line 48, ../sass/_index.scss */
+.btn-login:focus, .btn-register:focus {
+  outline: none;
+}
+
+/* line 52, ../sass/_index.scss */
+.btn-login {
+  background-color: #568EA3;
+  color: #FFF;
+  margin-top: 15px;
+}
+
+/* line 57, ../sass/_index.scss */
+.btn-register {
+  background-color: #FFF;
+  border: 1px solid #568EA3;
+  color: #568EA3;
+}
+
+/* line 64, ../sass/_index.scss */
 .email {
   border-radius: 0px;
   padding: 8px 16px;
 }
 
-/* line 28, ../sass/_index.scss */
+/* line 69, ../sass/_index.scss */
 .pwd {
   border-radius: 0px;
   padding: 8px 16px;
 }
 
-/* line 33, ../sass/_index.scss */
+/* line 74, ../sass/_index.scss */
 .hideForm {
   display: none;
+}
+
+/* line 1, ../sass/_volunteer.scss */
+#logo-img {
+  padding: 20px 40px;
+}
+/* line 3, ../sass/_volunteer.scss */
+#logo-img:hover {
+  background-color: transparent;
+  border-color: transparent;
 }

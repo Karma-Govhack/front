@@ -10,7 +10,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet">
         <link rel="stylesheet" href="stylesheets/normalize.min.css">
         <link rel="stylesheet" href="stylesheets/styles.css">
 
@@ -22,17 +22,18 @@
         <![endif]-->
         <div id="mainDiv" class="container-fluid">
             <div class="panel panel-default" id="formPanel">
-              <div class="panel-heading">
+              <div class="panel-heading text-center">
                 <!-- <div class="btn-group text-center">
                   <a href="#" class="btn btn-primary" id="vBtn">I'm a Volunteer...</a>
                   <a href="#" class="btn btn-primary" id="cBtn">I'm a Charity Member...</a>
                 </div> -->
-                <h1 title="panel-title">
-                  Are you a...
+                <img src="assets/img/logo-light@no-bg.png" height="60px"  />
+                <h1>
+                  Welcome to Karma
                 </h1>
               </div>
               <div class="panel-body">
-                <form class="hideForm" id="cForm">
+                <!-- <form class="hideForm" id="cForm">
                   <div class="form-group">
                     <input type="email" class="form-control email" placeholder="Enter Charity email...">
                   </div>
@@ -51,13 +52,25 @@
                   </div>
                   <div class="form-group">
                     <input type="password" class="form-control pwd" placeholder="Enter Password...">
+                  </div> -->
+                  <div class="flex-container">
+                    <div class="flex-item text-center">
+                      <h3>Volunteer</h3>
+                      <div class="btns">
+                        <a class="btn btn-login" href="volunteer.html">Sign In</a>
+                        <button class="btn btn-register" data-toggle="modal" data-target="#myModal">Register</button>
+                      </div>
+                    </div>
+                    <div class="flex-item text-center">
+                      <h3>Charity</h3>
+                      <div class="btns">
+                        <a class="btn btn-login" href="charity.html">Sign In</a>
+                        <button class="btn btn-register" data-toggle="modal" data-target="#myModal">Register</button>
+                      </div>
+                    </div>
                   </div>
 
-                  <div class="btn-group">
-                    <button type="submit" class="btn btn-primary" style="border-radius: 0px;">Sign In</button>
-                    <button type="button" class="btn btn-primary" style="border-radius: 0px;" data-toggle="modal" data-target="#myModal">Register here...</button>
-                  </div>
-                </form>
+                <!-- </form> -->
               </div>
             </div>
           </div>
