@@ -8835,8 +8835,9 @@ p {
 .nav {
   background-color: #CF4B00;
 }
-/* line 31, ../sass/_base.scss */
-.nav .logo-img {
+
+/* line 32, ../sass/_base.scss */
+.logo-img {
   padding: 15px 20px;
 }
 
@@ -8925,38 +8926,90 @@ p {
 
 /* line 7, ../sass/_index.scss */
 #formPanel {
-  border-radius: 0px;
   width: 60%;
   position: absolute;
-  top: 25%;
-  left: 25%;
+  top: 18%;
+  left: calc(20% + 7.5px);
   border: 0;
 }
-/* line 15, ../sass/_index.scss */
+/* line 14, ../sass/_index.scss */
 #formPanel > .panel-heading {
   background-color: #CF4B00;
   border-radius: 0px;
   padding: 25px 10px;
+  border-color: transparent;
 }
-/* line 21, ../sass/_index.scss */
+/* line 22, ../sass/_index.scss */
 #formPanel > .panel-heading h1 {
   color: #FFF;
-  text-align: center;
 }
 
-/* line 33, ../sass/_index.scss */
+/* line 30, ../sass/_index.scss */
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/* line 35, ../sass/_index.scss */
+.flex-container .flex-item {
+  -webkit-flex-basis: 50%;
+  flex-basis: 50%;
+}
+/* line 38, ../sass/_index.scss */
+.flex-container .flex-item:first-of-type {
+  border-right: 1px solid #B4B8AB;
+}
+
+/* line 43, ../sass/_index.scss */
+.btns {
+  padding: 5px 5px 15px;
+}
+
+/* line 46, ../sass/_index.scss */
+.btn-login, .btn-register {
+  width: 75%;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  padding: 15px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+/* line 52, ../sass/_index.scss */
+.btn-login:focus, .btn-register:focus {
+  outline: none;
+}
+
+/* line 56, ../sass/_index.scss */
+.btn-login {
+  background-color: #568EA3;
+  color: #FFF;
+  margin-top: 15px;
+}
+
+/* line 61, ../sass/_index.scss */
+.btn-register {
+  background-color: #FFF;
+  border: 1px solid #568EA3;
+  color: #568EA3;
+}
+
+/* line 68, ../sass/_index.scss */
 .email {
   border-radius: 0px;
   padding: 8px 16px;
 }
 
-/* line 38, ../sass/_index.scss */
+/* line 73, ../sass/_index.scss */
 .pwd {
   border-radius: 0px;
   padding: 8px 16px;
 }
 
-/* line 43, ../sass/_index.scss */
+/* line 78, ../sass/_index.scss */
 .hideForm {
   display: none;
 }
