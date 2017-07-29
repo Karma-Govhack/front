@@ -1,0 +1,35 @@
+#mainDiv {
+  background: url('../assets/img/bg-img-overlay.png') no-repeat center center;
+  @include background-size(cover);
+  height: 100vh;
+}
+
+#formPanel {
+  border-radius: 0px;
+  width: 60%;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  border: 0;
+}
+
+#formPanel > .panel-heading {
+  background-color: $veryOrange;
+  // background-color: rgba(207, 75, 0, 0.8);
+  border-radius: 0px;
+  padding: 25px 10px;
+}
+
+.email {
+  border-radius: 0px;
+  padding: 8px 16px;
+}
+
+.pwd {
+  border-radius: 0px;
+  padding: 8px 16px;
+}
+
+.hideForm {
+  display: none;
+}
