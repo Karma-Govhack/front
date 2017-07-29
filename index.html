@@ -14,18 +14,75 @@
         <link rel="stylesheet" href="stylesheets/normalize.min.css">
         <link rel="stylesheet" href="stylesheets/styles.css">
 
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="javascripts/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <div id="mainDiv" class="container-fluid">
+            <div class="panel panel-default" id="formPanel">
+              <div class="panel-heading">
+                <!-- <div class="btn-group text-center">
+                  <a href="#" class="btn btn-primary" id="vBtn">I'm a Volunteer...</a>
+                  <a href="#" class="btn btn-primary" id="cBtn">I'm a Charity Member...</a>
+                </div> -->
+                <h1 title="panel-title">
+                  Are you a...
+                </h1>
+              </div>
+              <div class="panel-body">
+                <form class="hideForm" id="cForm">
+                  <div class="form-group">
+                    <input type="email" class="form-control email" placeholder="Enter Charity email...">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control pwd" placeholder="Enter Password...">
+                  </div>
+                  <div class="btn-group">
+                    <button type="submit" class="btn btn-primary">Sign In</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Register here...</button>
+                  </div>
+                </form>
 
-        <p>Hello world!</p>
+                <form id="vForm">
+                  <div class="form-group">
+                    <input type="email" class="form-control email" placeholder="Enter Volunteer email...">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control pwd" placeholder="Enter Password...">
+                  </div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+                  <div class="btn-group">
+                    <button type="submit" class="btn btn-primary" style="border-radius: 0px;">Sign In</button>
+                    <button type="button" class="btn btn-primary" style="border-radius: 0px;" data-toggle="modal" data-target="#myModal">Register here...</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
 
-        <script src="js/main.js"></script>
+          <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Some text in the modal.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+        <script>window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="javascripts/main.js"></script>
     </body>
 </html>
