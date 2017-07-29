@@ -8881,7 +8881,7 @@ p {
 }
 /* line 70, ../sass/_base.scss */
 .profile-image img {
-  border: 1px solid #343534;
+  border: 1px solid #B4B8AB;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
@@ -8937,7 +8937,7 @@ p {
 #formPanel {
   width: 60%;
   position: absolute;
-  top: 18%;
+  top: 15%;
   left: 20%;
   border: 0;
 }

@@ -69,7 +69,7 @@ p {
   padding: 20px 0;
   img {
 
-    border: 1px solid $almostBlack;
+    border: 1px solid $oliveGray;
     @include border-radius(50%);
   }
 }
@@ -111,7 +111,7 @@ p {
 }
 .bio {
   > .panel {
-    
+
     max-width: 90%;
     .panel-heading h2 {
       font-weight: 600;
