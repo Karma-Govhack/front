@@ -7,3 +7,8 @@ function toggleCharityForm() {
   $('#homepageOptions').addClass("hidden");
   $('#charityRegForm').removeClass("hidden");
 }
+
+function backToHome(formId) {
+  $("'#" + formId + "'").addClass("hidden");
+  $('#homepageOptions').removeClass("hidden");
+}
