@@ -1,6 +1,7 @@
 html {
   color: $almostBlack;
   @include box-sizing(border-box);
+  font: normal normal 300 15px/1.4em $mainFont;
 }
 
 *,
@@ -10,6 +11,21 @@ html {
   @include box-sizing(inherit);
 }
 
+h1 {
+  font: normal normal 800 2rem/1.4em $mainFont;
+}
+h2 {
+  font: normal normal 600 1.8rem/1.4em $mainFont;
+}
+h3 {
+  font: normal normal 600 1.6rem/1.4em $mainFont;
+}
+h4 {
+  font: normal normal 600 1.4rem/1.4em $mainFont;
+}
+p {
+  font: inherit;
+}
 .nav {
   background-color: $veryOrange;
   .logo-img {
@@ -29,11 +45,13 @@ html {
 }
 .section-title {
   padding: 15px;
+  h2 {
+    font-weight: 800;
+  }
   h2, h4 {
     text-align: center;
   }
 }
-
 .profile-image {
   padding: 20px 0;
   img {
@@ -41,14 +59,30 @@ html {
     @include border-radius(50%);
   }
 }
-
-.profile-section > .panel-heading {
-  background-color: $seaBlue!important;
-  h2 {
-    font-size: 20px;
-    color: $white;
+.panel {
+  > .panel-body {
+    font: normal normal 300 15px/1.4em $mainFont;
+  }
+  > .panel-heading h2 {
+    font: normal normal 300 1.3rem/1.4em $mainFont;
   }
 }
-.panel {
+.card-list > .panel {
+  .panel-heading {
+    background-color: $seaBlue;
+    h2 {
+
+      color: $white;
+    }
+  }
   border: 1px solid #B4B8AB;
+}
+
+.bio {
+  > .panel {
+    max-width: 90%;
+    .panel-heading h2 {
+      font-weight: 600;
+    }
+  }
 }

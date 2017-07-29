@@ -11,14 +11,24 @@
   top: 25%;
   left: 25%;
   border: 0;
+
+  > .panel-heading {
+    background-color: $veryOrange;
+    // background-color: rgba(207, 75, 0, 0.8);
+    border-radius: 0px;
+    padding: 25px 10px;
+
+    h1 {
+
+      color: $white;
+      text-align: center;
+
+    }
+  }
+
+
 }
 
-#formPanel > .panel-heading {
-  background-color: $veryOrange;
-  // background-color: rgba(207, 75, 0, 0.8);
-  border-radius: 0px;
-  padding: 25px 10px;
-}
 
 .email {
   border-radius: 0px;
