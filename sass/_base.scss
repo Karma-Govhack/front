@@ -1,5 +1,13 @@
 html {
   color: $almostBlack;
+  @include box-sizing(border-box);
+}
+
+*,
+*:before,
+*:after {
+
+  @include box-sizing(inherit);
 }
 
 .nav {
@@ -34,7 +42,7 @@ html {
   }
 }
 
-.panel-heading {
+.profile-section > .panel-heading {
   background-color: $seaBlue!important;
   h2 {
     font-size: 20px;
